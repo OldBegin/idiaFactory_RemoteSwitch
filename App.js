@@ -1,28 +1,20 @@
-import React, {Component} from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {createStackNavigator, createAppContainer} from 'react-navigation';
 import LoginScreen from './src/LoginScreen';
+import SignupScreen from './src/SignupScreen';
 
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <LoginScreen text="Login Screen" />
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    // alignItems: 'center',
-    // justifyContent: 'center',
-    // backgroundColor: '#f5fcff',
+const AppNavigator = createStackNavigator({
+  Home: {
+    screen: LoginScreen,
+    navigationOptions: {
+      header: null,
+    },
   },
-  text: {
-    fontSize: 36,
-    textAlign: 'center',
-    margin: 10,
-    color: 'blue',
+  SignUp: {
+    screen: SignupScreen,
+    navigationOptions: {
+      header: null,
+    },
   },
 });
+
+export default createAppContainer(AppNavigator);

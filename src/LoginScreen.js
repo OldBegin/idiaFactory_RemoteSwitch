@@ -24,7 +24,7 @@ export default class LoginScreen extends Component {
     return (
       <View style={styles.container}>
         <Image source={require('./icon.png')} style={styles.icon} />
-        <Text style={styles.welcomeText}>{this.props.text}</Text>
+        <Text style={styles.welcomeText}>환영합니다.</Text>
         <TextInput
           placeholder={this.state.idText}
           onChangeText={id => this.setState({id})}
@@ -45,7 +45,8 @@ export default class LoginScreen extends Component {
         />
         <Text style={styles.noAccountText}>계정이 없으신가요</Text>
 
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => this.props.navigation.navigate('SignUp')}>
           <Text style={styles.makeAccountText}>계정만들기</Text>
         </TouchableOpacity>
       </View>
