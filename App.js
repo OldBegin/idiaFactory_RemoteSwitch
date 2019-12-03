@@ -6,7 +6,6 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>text</Text>
         <LoginScreen text="Login Screen" />
       </View>
     );
@@ -16,9 +15,9 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#f5fcff',
+    // alignItems: 'center',
+    // justifyContent: 'center',
+    // backgroundColor: '#f5fcff',
   },
   text: {
     fontSize: 36,
