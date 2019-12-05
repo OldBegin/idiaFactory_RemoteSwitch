@@ -41,7 +41,7 @@ export default class LoginScreen extends Component {
         <FooterButton
           buttonText="로그인"
           style={styles.loginButton}
-          Onpress={() => {}}
+          onPress={() => this.props.navigation.navigate('Main')}
         />
         <Text style={styles.noAccountText}>계정이 없으신가요</Text>
 
