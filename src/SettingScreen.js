@@ -15,7 +15,7 @@ export default class SettingScreen extends Component {
         <Image source={require('./icon.png')} style={styles.icon} />
         <Text style={styles.currentVersionText}>현재버전: 1.0.0</Text>
         <Text style={styles.currentVersionText}>지원환경: IOS 7.0 이상</Text>
-        <FooterButton buttonText="로그아웃" style={styles.FooterButton} />
+        <FooterButton onPress={() => this.props.navigation.navigate('Home')} buttonText="로그아웃" style={styles.FooterButton} />
         <Text style={styles.currentVersionText}>
           ©️ 원래는 웹을하려고 했었다.
         </Text>
