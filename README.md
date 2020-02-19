@@ -135,6 +135,10 @@ made from revert 2
 -----------------------------
 commit 1
 commit 2
+<<<<<<< HEAD
 commit 3-1
 commit 4-1
 after revert revert 5-1
+=======
+commit 3-1
+>>>>>>> parent of d44deb6... commit 4-1
