@@ -137,3 +137,7 @@ made from revert 2
 start revert test
 
 -----------------------------
+
+fuction1(){
+  commit 1
+}
