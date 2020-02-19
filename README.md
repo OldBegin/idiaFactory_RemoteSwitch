@@ -153,3 +153,7 @@ function3(){
 function4(){
   commit 4
 }
+
+function(){
+  commit 5
+}
