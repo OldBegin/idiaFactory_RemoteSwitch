@@ -146,3 +146,6 @@ function2(){
   commit 2
 }
 
+function3(){
+  commit 3
+}
