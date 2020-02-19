@@ -141,3 +141,8 @@ start revert test
 fuction1(){
   commit 1
 }
+
+function2(){
+  commit 2
+}
+
