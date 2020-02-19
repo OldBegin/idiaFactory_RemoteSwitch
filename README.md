@@ -149,11 +149,3 @@ function2(){
 function3(){
   commit 3
 }
-
-function4(){
-  commit 4
-}
-
-function(){
-  commit 5
-}
